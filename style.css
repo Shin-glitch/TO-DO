@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -29,7 +29,7 @@ body {
     grid-auto-rows: minmax(100px, 150px) auto;
     grid-template-areas: 
     "hh hh hh hh hh hh hh hh hh hh"
-    "sb sb mn mn mn mn mn mn mn mn";
+    "sb sb sb mn mn mn mn mn mn mn";
 }
 
 .hh {
@@ -45,13 +45,11 @@ body {
 }
 
 .header {
-    background-color: hsl(196, 60%, 55%);
-    background-color: #2d3668;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    place-content: center;
     background-color: hsl(14, 100%, 61%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .container {
@@ -60,7 +58,6 @@ body {
 }
 
 .sidebar {
-    background-color: 	#eee;
     background-color: #212121;
     display: flex;
     flex-direction: column;
@@ -75,9 +72,9 @@ body {
 }
 
 .sidebar_text {
-    font-size: 2.75rem;
-    color: purple;
+    font-size: 3rem;
     color: #FF5722;
+    font-weight: 500;
 }
 
 .btn {
@@ -109,5 +106,23 @@ body {
 @media (max-width: 481px) {
   .title {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sidebar_text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 675px) {
+  .sidebar_text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 675px) {
+  .sidebar_text {
+    font-size: 1rem;
   }
 }
