@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
     margin: 0;
@@ -27,9 +27,9 @@ body {
     grid-template-columns: repeat(10, 1fr);
     /* grid-template-rows: 1fr 8fr; */
     grid-auto-rows: minmax(100px, 150px) auto;
-    grid-template-areas: 
-    "hh hh hh hh hh hh hh hh hh hh"
-    "sb sb sb mn mn mn mn mn mn mn";
+    grid-template-areas:
+        "hh hh hh hh hh hh hh hh hh hh"
+        "sb sb sb mn mn mn mn mn mn mn";
 }
 
 .hh {
@@ -49,7 +49,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .container {
@@ -63,7 +62,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 2rem ;
+    padding-top: 2rem;
     border-right: #ccc 1px solid;
 }
 
@@ -73,7 +72,7 @@ body {
 
 .sidebar_text {
     font-size: 3rem;
-    color: #FF5722;
+    color: #ff5722;
     font-weight: 500;
 }
 
@@ -83,7 +82,7 @@ body {
 
 .add {
     font-size: 3rem;
-    background-color: #FF5722;
+    background-color: #ff5722;
     color: #fff;
     width: 60px;
     height: 60px;
@@ -102,27 +101,38 @@ body {
     transform: scale(1.1);
 }
 
-
 @media (max-width: 481px) {
-  .title {
-    font-size: 3rem;
-  }
+    .title {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 1000px) {
-  .sidebar_text {
-    font-size: 2rem;
-  }
+    .sidebar_text {
+        font-size: 2rem;
+    }
+
+    .add {
+        height: 30px;
+        width: 30px;
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 675px) {
-  .sidebar_text {
-    font-size: 1.5rem;
-  }
+    .sidebar_text {
+        font-size: 1.5rem;
+    }
+
+    .add {
+        height: 20px;
+        width: 20px;
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 675px) {
-  .sidebar_text {
-    font-size: 1rem;
-  }
+    .sidebar_text {
+        font-size: 1rem;
+    }
 }
