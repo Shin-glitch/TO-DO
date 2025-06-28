@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* GENERAL STYLES */
+
+/* GENERAL STYLES */
+html {
+    scroll-behavior: smooth;
+    color: #f4f4f4;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    /* grid-template-rows: 1fr 8fr; */
+    grid-auto-rows: minmax(100px, 150px) auto;
+    grid-template-areas: 
+    "hh hh hh hh hh hh hh hh hh hh"
+    "sb sb mn mn mn mn mn mn mn mn";
+}
+
+.hh {
+    grid-area: hh;
+}
+
+.mn {
+    grid-area: mn;
+}
+
+.sb {
+    grid-area: sb;
+}
+
+.header {
+    background-color: hsl(196, 60%, 55%);
+    background-color: #2d3668;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    place-content: center;
+    background-color: hsl(14, 100%, 61%);
+}
+
+.container {
+    background-color: #e5e5e5;
+    color: #212121;
+}
+
+.sidebar {
+    background-color: 	#eee;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2rem ;
+    border-right: #ccc 1px solid;
+}
+
+.title {
+    font-size: 4rem;
+}
+
+.sidebar_text {
+    font-size: 2.75rem;
+    color: purple;
+    color: #FF5722;
+}
+
+.btn {
+    margin-top: 2rem;
+}
+
+.add {
+    font-size: 3rem;
+    background-color: #FF5722;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.add:hover {
+    background-color: #e64a19;
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 481px) {
+  .title {
+    font-size: 3rem;
+  }
+}
