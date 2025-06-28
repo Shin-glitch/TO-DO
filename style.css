@@ -68,13 +68,61 @@ body {
 }
 
 .task_card {
-    background-color: #989898;
+    background-color: #eee;
     color: #333;
-    border: #ccc 2px solid;
-    border-radius: 5px;
-    height: 60px;
+    border-left: #ff5722 5px solid;
+    height: 90px;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 20px;
+    font-size: 1.5rem;
+
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
+
+.task_card:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* .checkbox {
+    border: #ff5722 1px solid;
+    border-radius: 3px;
+} */
+ .checkbox {
+  appearance: none; /* Remove default checkbox */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ff5722;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.checkbox:checked {
+  background-color: #ff5722;
+  border-color: #ff5722;
+}
+
+.checkbox:checked::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
 
 .sidebar {
     top: 150;
