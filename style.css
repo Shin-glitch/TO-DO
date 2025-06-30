@@ -58,7 +58,8 @@ body {
 }
 
 .container {
-    background-color: #e5e5e5;
+    background-color: beige;
+    background-color: #faedcd;
     color: #212121;
 }
 
@@ -70,7 +71,7 @@ body {
 }
 
 .task_card {
-    background-color: #eee;
+    background-color: #fefae0;
     color: #333;
     border-left: #ff5722 5px solid;
     height: 90px;
