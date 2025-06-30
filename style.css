@@ -49,6 +49,7 @@ body {
     position: sticky;
     top: 0;
     background-color: hsl(14, 100%, 61%);
+    color: #212121;
     display: flex;
     justify-content: center;
     align-items: center;
