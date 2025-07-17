@@ -28,19 +28,14 @@
             <div class="task_card">
                 <input class="checkbox" type="checkbox" name="task" id="task">task three
             </div>
-            <!-- <div class="task_card">
-                <input class="checkbox" type="checkbox" name="task" id="task">task
-            </div> -->
-            <div class="add-task-btn_container">
-                <span class="add btn" aria-label="Add new task" role="button">+</span>
-            </div>
         </div>
     </main>
     <aside class="sidebar sb">
         <p class="sidebar_text">
             ADD TASK
         </p>
-        <span class="add btn" aria-label="Add new task" role="button">+</span>
+        <span class="add btn" aria-label="Add new task" role="button" onclick="StoreTask()">+</span>
+        <span class="input_field"><input type="text" name="task" id="task_input"></span>
     </aside>
     <script src="main.js"></script>
 </body>

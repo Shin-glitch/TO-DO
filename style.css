@@ -14,7 +14,6 @@ img {
 
 /* GENERAL STYLES */
 
-/* GENERAL STYLES */
 html {
     scroll-behavior: smooth;
     color: #f4f4f4;
@@ -26,8 +25,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    /* grid-template-rows: 1fr 8fr; */
-    grid-auto-rows: minmax(100px, 150px) auto;
+    grid-auto-rows: 150px auto;
     grid-template-areas:
         "hh hh hh hh hh hh hh hh hh hh"
         "sb sb sb mn mn mn mn mn mn mn";
@@ -83,7 +81,8 @@ body {
     gap: 20px;
     font-size: 1.5rem;
 
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease,
+        box-shadow 0.3s ease;
     cursor: pointer;
 }
 
@@ -93,39 +92,34 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* .checkbox {
-    border: #ff5722 1px solid;
-    border-radius: 3px;
-} */
- .checkbox {
-  appearance: none; /* Remove default checkbox */
-  width: 20px;
-  height: 20px;
-  border: 2px solid #ff5722;
-  border-radius: 4px;
-  background-color: #fff;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.2s ease-in-out;
+.checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ff5722;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease-in-out;
 }
 
 .checkbox:checked {
-  background-color: #ff5722;
-  border-color: #ff5722;
+    background-color: #ff5722;
+    border-color: #ff5722;
 }
 
 .checkbox:checked::after {
-  content: '';
-  position: absolute;
-  left: 5px;
-  top: 1px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
 }
-
 
 .sidebar {
     top: 150;
@@ -181,6 +175,33 @@ body {
     height: 150px;
     display: flex;
     justify-content: center;
+}
+
+.input_field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    margin: 2rem auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input_field input[type="text"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 2em;
+    font-style: bold;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    /* font-size: 1rem; */
+    background: transparent;
+    color: #333;
 }
 
 @media (max-width: 481px) {
