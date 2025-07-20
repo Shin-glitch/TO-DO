@@ -1,6 +1,7 @@
 const task = document.getElementById("task_input");
 let tasks = JSON.parse(localStorage.getItem("Tasks")) || [];
 const taskContainer = document.querySelector(".tasks_container");
+//made specifically for deleting
 
 //executes when user clicks on add task button
 function addTask() {
@@ -8,7 +9,7 @@ function addTask() {
     tasks.push(task.value)
     let jsonTasks = JSON.stringify(tasks);
     localStorage.setItem("Tasks", jsonTasks);
-
+    
     //adding a task card
     let newTaskCard = document.createElement("div");
     newTaskCard.classList.add("task_card");
@@ -17,7 +18,7 @@ function addTask() {
     
     //adding checkbox to task card
     let newCheckbox = document.createElement("input");
-    newCheckbox.id = "task";
+    // newCheckbox.id = "task";
     newCheckbox.classList.add("checkbox");
     newCheckbox.type = "checkbox";
     newTaskCard.prepend(newCheckbox);
@@ -33,5 +34,21 @@ function addTask() {
     newDelete.textContent = "🗑️";
     newDelete.classList.add("delete_task");
     newTaskCard.append(newDelete);
-    
+
+    task.value = "";
 }
+
+
+// delete card
+taskContainer.addEventListener("click", (event) => {
+    if(event.target.classList.contains("delete_task")) {
+        const card = event.target.parentElement;
+        const taskText = card.querySelector(".task_card_text").textContent;
+
+        tasks.filter(t => t !== taskText);
+        localStorage.setItem("Tasks", tasks);
+
+        card.remove();
+    }
+})
+

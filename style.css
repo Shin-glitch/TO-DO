@@ -88,7 +88,7 @@ body {
 }
 
 .task_card:hover {
-    background-color: #ff562231;
+    background-color: #ff56221a;
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
