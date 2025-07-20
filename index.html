@@ -20,13 +20,9 @@
     <main class="container mn">
         <div class="tasks_container">
             <div class="task_card">
-                <input class="checkbox" type="checkbox" name="task" id="task">task one
-            </div>
-            <div class="task_card">
-                <input class="checkbox" type="checkbox" name="task" id="task">task two
-            </div>
-            <div class="task_card">
-                <input class="checkbox" type="checkbox" name="task" id="task">task three
+                <input class="checkbox" type="checkbox" name="task" id="task">
+                <span class="task_card_text">task one</span>
+                <span class="delete_task">🗑️</span>
             </div>
         </div>
     </main>
@@ -34,10 +30,11 @@
         <p class="sidebar_text">
             ADD TASK
         </p>
-        <span class="add btn" aria-label="Add new task" role="button" onclick="StoreTask()">+</span>
+        <span class="add btn" aria-label="Add new task" role="button" onclick="addTask()">+</span>
         <span class="input_field"><input type="text" name="task" id="task_input"></span>
     </aside>
     <script src="main.js"></script>
 </body>
 
 </html>
+    
